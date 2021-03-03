@@ -1,0 +1,23 @@
+{
+    "name": "Google-Adblock",
+    "version": "1.0",
+    "description": "Removes those annoying Google ads and shopping banners from the search.",
+    "icons": 
+    {
+        "16":  "16.png",
+        "48":  "48.png",
+        "128": "128.png"  
+    },
+    "permissions": [
+        "*://*.google.com/*",
+        "*://*.google.de/*",
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["*://*.google.de/*", "*://*.google.com/*"],
+        "js": ["content.js"],
+        "css": ["content.css"]
+    }],
+    "manifest_version": 2
+  }
