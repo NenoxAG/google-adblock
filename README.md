@@ -3,6 +3,9 @@
 A Chrome extension which removes those annoying Google ads and shopping banners from the search.
 
 <br />
+
+⚠️ This currently only works with google.de and google.com domains. If you wish to be able to use this extension on your google.* domain you can create a pull-request for the manifest.json where you can add it to permissions.
+
 <br />
 <br />
 <br />
