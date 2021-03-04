@@ -12,12 +12,17 @@
         "*://*.google.com/*",
         "*://*.google.de/*",
         "tabs",
-        "activeTab"
+        "activeTab",
+        "storage"
     ],
     "content_scripts": [{
         "matches": ["*://*.google.de/*", "*://*.google.com/*"],
         "js": ["content.js"],
         "css": ["content.css"]
     }],
+    "options_ui": {
+        "page": "settings.html",
+        "open_in_tab": false
+    },
     "manifest_version": 2
   }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google-Adblock Settings</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" media="screen" />
+    <style>
+        #save {
+            transition: all ease-in-out 0.5s !important;
+            width: 100%;
+        }
+
+        .success {
+            background-color: green !important;
+            border-color: green !important;
+            box-shadow: 0 0 0 0.25rem rgb(0 128 0 / 50%) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="status"></p>
+
+    <form class="m-3">
+        <!--<div class="mb-3 form-group">
+            <label for="adKeywords">Ad-keywords</label>
+            <textarea class="form-control" id="adKeywords" rows="3"></textarea>
+            <div id="adKeywordHelp" class="form-text">Please fill in all the ad-keywords you can find on your Google search. (Keywords separated by newlines)</div>
+        </div>-->
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="enableTopBlocker">
+            <label class="form-check-label" for="enableTopBlocker">Should ads at the top of the page be blocked</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="enableBottomBlocker">
+            <label class="form-check-label" for="enableBottomBlocker">Should ads at the bottom of the page be blocked</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="enableSidebarBlocker">
+            <label class="form-check-label" for="enableSidebarBlocker">Should ads in the sidebar of the page be blocked</label>
+        </div>
+        <button id="save" type="submit" class="btn btn-primary">Save</button>
+    </form>
+
+    <hr />
+
+    <div class="ms-3">
+        <p><a href="#" id="github">Visit this project on Github 
+            <img src="/github.svg" alt="Bootstrap" width="16" height="16">
+        </a></p>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>
