@@ -5,7 +5,7 @@ A Chrome extension which removes those annoying Google ads and shopping banners 
 <br />
 <br />
 
-⚠️ This currently only works with google.de and google.com domains. If you wish to be able to use this extension on your google.* domain you can create a pull-request for the manifest.json where you can add it to permissions.
+⚠️ This currently only works with google.de and google.com domains. If you wish to be able to use this extension on your local google.* domain you can create a pull-request for the manifest.json where you can add it to the matches section of the content scripts.
 
 ## How to install
 1. Clone this repository to your machine.
