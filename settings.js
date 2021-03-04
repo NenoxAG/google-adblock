@@ -4,12 +4,12 @@ function save_options(event) {
 
   var blockTop = document.getElementById('enableTopBlocker').checked;
   var blockBottom = document.getElementById('enableBottomBlocker').checked;
-  var adKeywords = document.getElementById('adKeywords').value;
+  var blockSidebar = document.getElementById('enableSidebarBlocker').checked;
 
   chrome.storage.sync.set({
     blockTop,
     blockBottom,
-    adKeywords
+    blockSidebar
   }, function() {
     // Update status to let user know options were saved.
     var status = document.getElementById('save');
@@ -29,11 +29,11 @@ function restore_options() {
   chrome.storage.sync.get({
     blockTop: true,
     blockBottom: true,
-    adKeywords: 'Advertisement\nAnzeige'
+    blockSidebar: true
   }, function(items) {
     document.getElementById('enableTopBlocker').checked = items.blockTop;
     document.getElementById('enableBottomBlocker').checked = items.blockBottom;
-    document.getElementById('adKeywords').value = items.adKeywords;
+    document.getElementById('enableSidebarBlocker').checked = items.blockSidebar;
   });
 }
 

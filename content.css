@@ -1,4 +1,25 @@
-#tads, #bottomads, .commercial-unit-desktop-rhs, .commercial-unit-desktop-top {
+/*#tads, #bottomads, .commercial-unit-desktop-rhs, .commercial-unit-desktop-top {
     display: none !important;
     visibility: hidden !important;
+}*/
+
+#tvcap, .ptJHdc  {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.hp3sk {
+    -webkit-transition: opacity 0.1s ease-in-out, max-height 0.2s ease-in-out !important;
+    -moz-transition: opacity 0.1s ease-in-out, max-height 0.2s ease-in-out !important;
+    -ms-transition: opacity 0.1s ease-in-out, max-height 0.2s ease-in-out  !important;
+    -o-transition: opacity 0.1s ease-in-out, max-height 0.2s ease-in-out  !important;
+    transition: opacity 0.1s ease-in-out, max-height 0.2s ease-in-out  !important;
+
+    opacity: 1;
+    max-height: 1000px;
+}
+
+.hp3sk.hide-opacity{
+    opacity: 0 !important;
+    max-height: 0 !important;
 }
