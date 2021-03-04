@@ -3,10 +3,21 @@
     visibility: hidden !important;
 }*/
 
-#tvcap, .ptJHdc  {
+#tvcap, .commercial-unit-desktop-rhs > *:not(:first-child) {
     display: none !important;
     visibility: hidden !important;
 }
+
+.commercial-unit-desktop-rhs {
+    box-shadow: none !important;
+}
+
+
+.Rn1jbe {
+    display: none !important;
+    visibility: hidden !important;
+}
+
 
 .hp3sk {
     -webkit-transition: opacity 0.1s ease-in-out, max-height 0.2s ease-in-out !important;
